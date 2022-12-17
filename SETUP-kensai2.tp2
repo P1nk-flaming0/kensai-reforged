@@ -12,6 +12,12 @@ AT_INTERACTIVE_EXIT ~VIEW kensai2\readme.txt~
 COPY ~kensai2\spl\APRADD1.SPL~ ~override~
 SAY NAME1 ~KENSAIV2 1.5APR~
 
+COPY ~kensai2\spl\APRADD2.SPL~ ~override~
+SAY NAME1 ~KENSAIV2 2APR~
+
+COPY ~kensai2\spl\APRREM1.SPL~ ~override~
+SAY NAME1 ~KENSAIV2 1APR~
+
 COPY ~kensai2\2da~ ~override~
 
 
@@ -43,8 +49,8 @@ ADD_KIT ~kensai2~
 	~Fi0~
 /* 25STWEAP.2DA */
 	~* * HELMLA * RING09 * * BOOT03 * BRAC09 BELT03 * * * POTN05,2 POTN20,5 POTN08,5 EXTHEAL,2 UMSTRA5A ULSWD3A~
-    SAY ~KensaiV2~
-	SAY ~KensaiV2~
+    SAY ~Kensai V2~
+	SAY ~Kensai~
 	SAY ~KENSAI: This class's name, which means "sword saint" in the common tongue, refers to a warrior who has been specially trained to be one with <PRO_HISHER> weapon. The kensai is deadly, fast, and trained to fight without the protection of armor. (Note: Despite its common name, a Kensai may use any melee weapon with which <PRO_HESHE> is proficient.)
 
 	Advantages:
