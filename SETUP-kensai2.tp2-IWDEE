@@ -10,10 +10,10 @@ AT_INTERACTIVE_EXIT ~VIEW kensai2\readme.txt~
 //REQUIRE_FILE ~Data/25Dialog.bif~ ~Requires BG2ToB~
 
 COPY ~kensai2\spl\APRADD1.SPL~ ~override~
-SAY NAME1 ~Gained Passive Ability: Additional 1/2 Attack~
+SAY NAME1 ~Gained Passive Ability: additional 1/2 attack~
 
 COPY ~kensai2\spl\APRADD2.SPL~ ~override~
-SAY NAME1 ~Gained Passive Ability: Additional 1/2 Attack~
+SAY NAME1 ~Gained Passive Ability: additional 1/2 attack~
 
 COPY ~kensai2\spl\APRREM1.SPL~ ~override~
 
@@ -58,16 +58,15 @@ ADD_KIT ~kensai2~
 	– +1 to hit and damage rolls every 3 levels.
 	– -1 bonus to Speed Factor every 4 levels.
 	– Moves 2 points faster than other characters. Movement further increases at levels 7, 13. 
-	– Gains an Additional 1/2 Attack at levels 5, 10, 15, 20.
+	– Gains an additional 1/2 attack at levels 5, 10, 15, 20.
 	– May use the Kai ability once per day every 4 levels (starts at 1st level with one use).
 	
 	KAI: All successful attacks within the next 10 seconds deal maximum damage.
 	
 	Disadvantages:
 	– May not wear any armor.
-	– May not use missile weapons.
-	– May not wear gauntlets or bracers.
-	– Alignment restricted to any non-chaotic.~
+	– May not use ranged weapons (both missile and thrown).
+	– May not wear gauntlets or bracers.~
 //--------------------------------------------------------------------------
 
 LAF fl#add_kit_ee
