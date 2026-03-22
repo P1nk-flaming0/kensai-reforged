@@ -4,18 +4,21 @@ AUTHOR ~Pink_Flamingo~
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
+ALWAYS
+  // Point this to your actual submodule path
+  OUTER_SPRINT BGFORGE_LIB_DIR "lib/bgforge" 
+  INCLUDE ~%BGFORGE_LIB_DIR%/main.tpa~
+END
+
 BEGIN ~Kensai Remake Kit~
-INCLUDE ~kensai2/fl#add_kit_ee.tpa~
+INCLUDE ~kensai2/lib/fl#add_kit_ee.tpa~
 AT_INTERACTIVE_EXIT ~VIEW kensai2\readme.txt~
 //REQUIRE_FILE ~Data/25Dialog.bif~ ~Requires BG2ToB~
 
-COPY ~kensai2\spl\APRADD1.SPL~ ~override~
+COPY ~kensai2\spl\pf#adapr.spl~ ~override~
 SAY NAME1 ~Gained Passive Ability: Additional 1/2 Attack~
 
-COPY ~kensai2\spl\APRADD2.SPL~ ~override~
-SAY NAME1 ~Gained Passive Ability: Additional 1/2 Attack~
-
-COPY ~kensai2\spl\APRREM1.SPL~ ~override~
+COPY ~kensai2\spl\pf#rmapr.spl~ ~override~
 
 
 COPY ~kensai2\2da~ ~override~
@@ -40,7 +43,7 @@ ADD_KIT ~kensai2~
 /* DUALCLAS.2DA */
 	~kensai2 0 1 1 1 1 0~
 /* The path of abilities 2DA file */
-	~kensai2/2da/CLABFK2.2DA~
+	~kensai2/2da/pf#clbfk.2da~
 /* KITTABLE.2DA */
 	~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
 /* KITLIST.2DA */
@@ -49,7 +52,7 @@ ADD_KIT ~kensai2~
 	~Fi0~
 /* 25STWEAP.2DA */
 	~* * HELMLA * RING09 * * BOOT03 * BRAC09 BELT03 * * * POTN05,2 POTN20,5 POTN08,5 EXTHEAL,2 UMSTRA5A ULSWD3A~
-  SAY ~KensaiV2~
+  SAY ~Kensai Adept~
 	SAY ~Kensai~
 	SAY ~KENSAI: This class's name, which means "sword saint" in the common tongue, refers to a warrior who has been specially trained to be one with <PRO_HISHER> weapon. The kensai is deadly, fast, and trained to fight without the protection of armor. (Note: Despite its common name, a Kensai may use any melee weapon with which <PRO_HESHE> is proficient.)
 
