@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.1] - 2026-08-12
+
+### Fixed
+
+- **Removed** the HANDLE_CHARSETS call from `SETUP-PF#kensai.tp2`. This mod is EE-only and the TRA files are already UTF-8, so charset conversion isn’t needed.
+
+---
+
 ## [1.0.0] - 2026-08-11
 
 ### Added
