@@ -46,20 +46,20 @@ In-game kit text (tokenized for gender pronouns as in the Infinity Engine):
 
 > KENSAI: This class's name, which means "sword saint" in the common tongue, refers to a warrior who has been specially trained to be one with <PRO_HISHER> weapon. The kensai is deadly, fast, and trained to fight without the protection of armor. (Note: Despite its common name, a Kensai may use any melee weapon with which <PRO_HESHE> is proficient.)
 >
-> Advantages:\n
+> Advantages:<br>
 > – +2 bonus to Armor Class.<br>
 > – +1 to hit and damage rolls every 3 levels.<br>
-> – -1 bonus to Speed Factor every 4 levels.
-> – Moves 2 points faster than other characters. Movement rate further improves by 1 every 5 levels.
-> – Gains an additional 1/2 attack every 5 levels until level 20.
+> – -1 bonus to Speed Factor every 4 levels.<br>
+> – Moves 2 points faster than other characters. Movement rate further improves by 1 every 5 levels.<br>
+> – Gains an additional 1/2 attack every 5 levels until level 20.<br>
 > – May use the Kai ability once per day every 4 levels (starts at 1st level with one use).
 >
 > KAI: All successful attacks within the next 10 seconds deal maximum damage.
 >
-> Disadvantages:
-> \n– May not wear any armor.
-> – May not use missile weapons.
-> – May not wear gauntlets or bracers.
+> Disadvantages:<br>
+> – May not wear any armor.<br>
+> – May not use missile weapons.<br>
+> – May not wear gauntlets or bracers.<br>
 > – Alignment restricted to any non-chaotic.
 
 ### Level Progression Matrix
