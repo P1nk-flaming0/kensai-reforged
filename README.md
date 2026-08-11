@@ -44,25 +44,23 @@ During installation you may either **replace the vanilla Kensai** or add **Kensa
 
 In-game kit text (tokenized for gender pronouns as in the Infinity Engine):
 
-```text
-KENSAI: This class's name, which means "sword saint" in the common tongue, refers to a warrior who has been specially trained to be one with <PRO_HISHER> weapon. The kensai is deadly, fast, and trained to fight without the protection of armor. (Note: Despite its common name, a Kensai may use any melee weapon with which <PRO_HESHE> is proficient.)
-
-Advantages:
-– +2 bonus to Armor Class.
-– +1 to hit and damage rolls every 3 levels.
-– -1 bonus to Speed Factor every 4 levels.
-– Moves 2 points faster than other characters. Movement rate further improves by 1 every 5 levels.
-– Gains an additional 1/2 attack every 5 levels until level 20.
-– May use the Kai ability once per day every 4 levels (starts at 1st level with one use).
-
-KAI: All successful attacks within the next 10 seconds deal maximum damage.
-
-Disadvantages:
-– May not wear any armor.
-– May not use missile weapons.
-– May not wear gauntlets or bracers.
-– Alignment restricted to any non-chaotic.
-```
+> KENSAI: This class's name, which means "sword saint" in the common tongue, refers to a warrior who has been specially trained to be one with <PRO_HISHER> weapon. The kensai is deadly, fast, and trained to fight without the protection of armor. (Note: Despite its common name, a Kensai may use any melee weapon with which <PRO_HESHE> is proficient.)
+>
+> Advantages:
+> – +2 bonus to Armor Class.
+> – +1 to hit and damage rolls every 3 levels.
+> – -1 bonus to Speed Factor every 4 levels.
+> – Moves 2 points faster than other characters. Movement rate further improves by 1 every 5 levels.
+> – Gains an additional 1/2 attack every 5 levels until level 20.
+> – May use the Kai ability once per day every 4 levels (starts at 1st level with one use).
+>
+> KAI: All successful attacks within the next 10 seconds deal maximum damage.
+>
+> Disadvantages:
+> – May not wear any armor.
+> – May not use missile weapons.
+> – May not wear gauntlets or bracers.
+> – Alignment restricted to any non-chaotic.
 
 ### Level Progression Matrix
 
