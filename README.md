@@ -6,9 +6,8 @@
 
 A rebalanced Kensai kit for Infinity Engine Enhanced Edition games.
 
-**\*\*Author:\*\*** [🦩 P1nk-flaming0](https://github.com/P1nk-flaming0) · **\*\*Download:\*\*** [_*latest*_](https://github.com/P1nk-flaming0/kensai-reforged/releases) · **\*\*Forum Thread:\*\*** _*To be updated...*_ · **\*\*Source:\*\*** [GitHub](https://github.com/P1nk-flaming0/kensai-reforged)
-
-**\*\*Contact:\*\*** [✉️ ↴](https://p1nk-flaming0.github.io/kensai-reforged/#contact)
+**Author:** [🦩 P1nk-flaming0](https://github.com/P1nk-flaming0) · **Download:** [_latest_](https://github.com/P1nk-flaming0/kensai-reforged/releases) · **Forum Thread:** _To be updated..._ · **Source:** [GitHub](https://github.com/P1nk-flaming0/kensai-reforged)
+**Contact:** [✉️ ↴](https://p1nk-flaming0.github.io/kensai-reforged/#contact)
 
 ---
 
