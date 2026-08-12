@@ -4,6 +4,70 @@
    Prefix: pffk (PF#kensai)
    ============================================================================= */
 
+@font-face {
+  font-family: "Ichimaru";
+  src: url("../font/Ichimaru-PKB1d.otf") format("opentype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AssassinNinja";
+  src: url("../font/AssassinNinja-MAVlp.otf") format("opentype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bankai";
+  src: url("../font/BankaiDemoVersion-lglxd.ttf") format("opentype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DomoaregatoItalic";
+  src: url("../font/DomoaregatoItalic-ARAM.ttf") format("opentype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HIROSHT";
+  src: url("../font/HIROSHT.TTF") format("opentype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Osake";
+  src: url("../font/Osake-x3oqj.otf") format("opentype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yakuza";
+  src: url("../font/YakuzaDemoRegular.ttf") format("opentype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GinjodemoRegular";
+  src: url("../font/GinjodemoRegular-yY4e5.otf") format("opentype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --pffk-ink: #090c10;
   --pffk-slate: #131822;
@@ -17,7 +81,9 @@
   --pffk-input-border: #3a4856;
   --pffk-glow: rgba(196, 218, 237, 0.2);
 
-  --pffk-font-display: "Shippori Mincho", "Yuji Syuku", "Georgia", serif;
+  --pffk-font-display:
+    "AssassinNinja", "DomoaregatoItalic", "Shippori Mincho", "Yuji Syuku",
+    "Georgia", serif;
   --pffk-font-body: "Noto Serif", "Georgia", "Times New Roman", serif;
   --pffk-font-mono: "JetBrains Mono", "Fira Code", "Consolas", monospace;
 
@@ -589,6 +655,10 @@ pre code {
   .pffk-contact__button {
     transition: none;
   }
+
+  .pffk-intro {
+    display: none !important;
+  }
 }
 
 /* -----------------------------------------------------------------------------
@@ -598,4 +668,156 @@ pre code {
 .site-main__container > h1:first-child,
 .site-main__container > h1:first-of-type {
   display: none;
+}
+
+/* -----------------------------------------------------------------------------
+   Intro — diagonal sword-slash reveal
+   ----------------------------------------------------------------------------- */
+
+html.pffk-intro-active,
+html.pffk-intro-active body {
+  overflow: hidden;
+}
+
+.pffk-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #000;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pffk-intro.is-done {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.pffk-intro__half {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  overflow: hidden;
+  will-change: transform;
+}
+
+/* Near-horizontal diagonal cut (left ~42% → right ~58%) */
+.pffk-intro__half--a {
+  clip-path: polygon(0 0, 100% 0, 100% 58%, 0 42%);
+}
+
+.pffk-intro__half--b {
+  clip-path: polygon(0 42%, 100% 58%, 100% 100%, 0 100%);
+}
+
+.pffk-intro__title-slot {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pffk-intro__title {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: "DomoaregatoItalic", "Ichimaru", "Shippori Mincho", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(2.6rem, 11vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.08em;
+  color: #eaf1f8;
+  text-shadow: 0 0 24px rgba(196, 218, 237, 0.25);
+}
+
+.pffk-intro__slash {
+  position: absolute;
+  left: -10%;
+  top: 42%;
+  width: 120%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #c4daed 15%,
+    #ffffff 50%,
+    #c4daed 85%,
+    transparent 100%
+  );
+  box-shadow:
+    0 0 8px rgba(255, 255, 255, 0.85),
+    0 0 22px rgba(196, 218, 237, 0.55);
+  transform: rotate(9deg) scaleX(0);
+  transform-origin: left center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.pffk-intro__hint {
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  margin: 0;
+  font-family: "Noto Serif", Georgia, serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(129, 146, 165, 0.7);
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.pffk-intro.is-slashing .pffk-intro__hint {
+  opacity: 0;
+}
+
+.pffk-intro.is-slashing .pffk-intro__slash {
+  animation: pffk-slash-flash 0.28s ease-out forwards;
+}
+
+.pffk-intro.is-slashing .pffk-intro__half--a {
+  animation: pffk-half-a-recede 0.5s cubic-bezier(0.55, 0.05, 0.85, 0.2) forwards;
+}
+
+.pffk-intro.is-slashing .pffk-intro__half--b {
+  animation: pffk-half-b-recede 0.5s cubic-bezier(0.55, 0.05, 0.85, 0.2) forwards;
+}
+
+@keyframes pffk-slash-flash {
+  0% {
+    opacity: 0;
+    transform: rotate(9deg) scaleX(0);
+  }
+  35% {
+    opacity: 1;
+    transform: rotate(9deg) scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(9deg) scaleX(1);
+  }
+}
+
+@keyframes pffk-half-a-recede {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-12%, -110%, 0);
+  }
+}
+
+@keyframes pffk-half-b-recede {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(12%, 110%, 0);
+  }
 }

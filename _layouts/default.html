@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/img/favicon-32x32.png" | relative_url }}">
   <link rel="apple-touch-icon" href="{{ "/assets/img/apple-touch-icon.png" | relative_url }}">
 
-  <!-- Shippori Mincho / Yuji Syuku: display · Noto Serif: body · JetBrains Mono: code -->
+  <!-- Ichimaru (local display) · Shippori/Yuji fallback · Noto Serif: body · JetBrains Mono: code -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Shippori+Mincho:wght@400;600;700&family=Yuji+Syuku&display=swap" rel="stylesheet">
@@ -22,6 +22,25 @@
   <link rel="stylesheet" href="{{ "/assets/css/pffk-theme.css" | relative_url }}">
 </head>
 <body>
+  <!-- Sword-slash intro (once per session; skipped for reduced-motion) -->
+  <div class="pffk-intro" id="pffk-intro" role="presentation" aria-hidden="true">
+    <audio id="pffk-intro-audio" preload="auto" playsinline>
+      <source src="{{ "/assets/audio/sword-slash.ogg" | relative_url }}" type="audio/ogg">
+      <source src="{{ "/assets/audio/sword-slash.mp3" | relative_url }}" type="audio/mpeg">
+    </audio>
+    <div class="pffk-intro__half pffk-intro__half--a" aria-hidden="true">
+      <div class="pffk-intro__title-slot">
+        <h1 class="pffk-intro__title">KENSAI<br>REFORGED</h1>
+      </div>
+    </div>
+    <div class="pffk-intro__half pffk-intro__half--b" aria-hidden="true">
+      <div class="pffk-intro__title-slot">
+        <h1 class="pffk-intro__title">KENSAI<br>REFORGED</h1>
+      </div>
+    </div>
+    <div class="pffk-intro__slash" aria-hidden="true"></div>
+    <p class="pffk-intro__hint">Click to draw</p>
+  </div>
   <header class="site-banner pffk-banner" role="banner">
     <div class="site-banner__inner pffk-banner__inner">
       <p class="site-banner__eyebrow pffk-banner__eyebrow">Baldur&rsquo;s Gate Enhanced Edition · Kit Mod</p>
@@ -96,5 +115,7 @@
       </p>
     </div>
   </footer>
+
+  <script src="{{ "/assets/js/pffk-intro.js" | relative_url }}" defer></script>
 </body>
 </html>

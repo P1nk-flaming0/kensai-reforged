@@ -1,0 +1,8 @@
+# Audio attribution
+
+## sword-slash.ogg / sword-slash.mp3
+
+- Title: Sword That Cuts
+- Author: Joseph Sardin (BigSoundBank / SoundBible.com)
+- Source: https://bigsoundbank.com/sword-that-cuts-s0127.html
+- License: CC0 1.0 (public domain dedication) — no attribution required; credit kept for courtesy
