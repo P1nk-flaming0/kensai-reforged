@@ -3,17 +3,18 @@
   <!-- Geometric tanto silhouette -->
   <path fill="#000000"
         transform="translate(32 32) rotate(-40) translate(-32 -32)"
-        d="M4 26
-           L17 26
-           L17 24
-           L23 24
-           L23 26
-           L48 26
-           L60 38
-           L23 38
-           L23 40
-           L17 40
-           L17 38
-           L4 38
+        d="M5 28
+           L17 28
+           L17 25
+           L21 25
+           L21 28
+           L48 28
+           L58 28
+           L48 36
+           L21 36
+           L21 39
+           L17 39
+           L17 36
+           L5 36
            Z"/>
 </svg>
