@@ -46,4 +46,7 @@ backup/
 _site/
 _cache/
 .jekyll-cache/
-Gemfile*
+.sass-cache/
+vendor/bundle/
+.bundle/
+Gemfile.lock

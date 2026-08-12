@@ -1,6 +1,6 @@
 # Kensai Reforged
 
-[![Version](https://img.shields.io/badge/version-v1.0.0-blue.svg)](https://github.com/P1nk-flaming0/bloodmoon-reaver)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue.svg)](https://github.com/P1nk-flaming0/kensai-reforged/releases)
 [![Engine](https://img.shields.io/badge/engine-BGEE%20%7C%20BG2EE%20%7C%20EET%20%7C%20IWDEE-informational.svg)](#compatibility--prerequisites)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](#license--legal)
 
@@ -8,7 +8,7 @@ A rebalanced Kensai kit for Infinity Engine Enhanced Edition games.
 
 **\*\*Author:\*\*** [🦩 P1nk-flaming0](https://github.com/P1nk-flaming0) · **\*\*Download:\*\*** [_*latest*_](https://github.com/P1nk-flaming0/kensai-reforged/releases) · **\*\*Forum Thread:\*\*** _*To be updated...*_ · **\*\*Source:\*\*** [GitHub](https://github.com/P1nk-flaming0/kensai-reforged)
 
-**\*\*Contact:\*\*** [✉️ ↴](https://p1nk-flaming0.github.io/bloodmoon-reaver/#contact)
+**\*\*Contact:\*\*** [✉️ ↴](https://p1nk-flaming0.github.io/kensai-reforged/#contact)
 
 ---
 

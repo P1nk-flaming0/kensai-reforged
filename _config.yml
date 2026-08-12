@@ -1,0 +1,9 @@
+# Kensai Reforged — GitHub Pages (custom theme, no remote/minima)
+title: Kensai Reforged
+description: "A rebalanced Kensai Fighter kit for BGEE, BG2EE, IWDEE & EET — hit-and-run steel discipline."
+markdown: kramdown
+theme: null
+
+# Web3Forms access key (public client-side key for the contact form)
+# Leave empty ("") to hide the contact section.
+web3forms_access_key: "e22b5033-e3a6-4d10-8cfb-5ef58dc5dc60"

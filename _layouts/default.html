@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% elsif site.description %}
+  <meta name="description" content="{{ site.description }}">
+  {% endif %}
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+
+  <link rel="icon" href="{{ "/assets/img/favicon.svg" | relative_url }}" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/img/favicon-32x32.png" | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ "/assets/img/apple-touch-icon.png" | relative_url }}">
+
+  <!-- Shippori Mincho / Yuji Syuku: display · Noto Serif: body · JetBrains Mono: code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Shippori+Mincho:wght@400;600;700&family=Yuji+Syuku&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ "/assets/css/pffk-theme.css" | relative_url }}">
+</head>
+<body>
+  <header class="site-banner pffk-banner" role="banner">
+    <div class="site-banner__inner pffk-banner__inner">
+      <p class="site-banner__eyebrow pffk-banner__eyebrow">Baldur&rsquo;s Gate Enhanced Edition · Kit Mod</p>
+      <h1 class="site-banner__title pffk-banner__title">
+        <a href="{{ "/" | relative_url }}">{{ site.title }}</a>
+      </h1>
+      {% if site.description %}
+      <p class="site-banner__tagline pffk-banner__tagline">{{ site.description }}</p>
+      {% endif %}
+      <div class="pffk-banner__divider" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main class="site-main" id="content" role="main">
+    <div class="site-main__container pffk-container">
+      {{ content }}
+    </div>
+  </main>
+
+  {% if site.web3forms_access_key and site.web3forms_access_key != "" %}
+  <section id="contact" class="site-contact pffk-contact" aria-labelledby="contact-heading">
+    <div class="pffk-contact__inner">
+      <h2 class="pffk-contact__title" id="contact-heading">Contact / Feedback</h2>
+      <p class="pffk-contact__lede">
+        Questions, feedback, or bug reports about Kensai Reforged — send a message below.
+      </p>
+      <form class="pffk-contact__form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="{{ site.web3forms_access_key }}">
+        <input type="hidden" name="subject" value="Kensai Reforged — Contact">
+        <input type="checkbox" name="botcheck" class="pffk-contact__honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="pffk-contact__group">
+          <label for="name" class="pffk-contact__label">Name</label>
+          <input type="text" id="name" name="name" class="pffk-contact__input" required autocomplete="name" placeholder="Sword Saint">
+        </div>
+
+        <div class="pffk-contact__group">
+          <label for="email" class="pffk-contact__label">Email</label>
+          <input type="email" id="email" name="email" class="pffk-contact__input" required autocomplete="email" placeholder="kensai@candlekeep.org">
+        </div>
+
+        <div class="pffk-contact__group">
+          <label for="message" class="pffk-contact__label">Message</label>
+          <textarea id="message" name="message" class="pffk-contact__textarea" rows="4" required placeholder="Your feedback or bug report..."></textarea>
+        </div>
+
+        <button type="submit" class="pffk-contact__button">Send Message</button>
+      </form>
+    </div>
+  </section>
+  {% endif %}
+
+  <footer class="site-footer pffk-footer" role="contentinfo">
+    <div class="site-footer__inner">
+      <p class="site-footer__brand">Kensai Reforged</p>
+      <p class="site-footer__links">
+        <a href="https://github.com/P1nk-flaming0/kensai-reforged">GitHub</a>
+        <span class="site-footer__sep" aria-hidden="true">·</span>
+        <a href="https://github.com/P1nk-flaming0/kensai-reforged/releases">Releases</a>
+        <span class="site-footer__sep" aria-hidden="true">·</span>
+        <a href="https://github.com/WeiDUorg/weidu">WeiDU</a>
+        {% if site.web3forms_access_key and site.web3forms_access_key != "" %}
+        <span class="site-footer__sep" aria-hidden="true">·</span>
+        <a href="#contact">Contact</a>
+        {% endif %}
+      </p>
+      <p class="site-footer__credits">
+        Built with
+        <a href="https://weidu.org/">WeiDU</a>
+        by Wes Weimer, the bigg &amp; Wisp.
+        Unofficial fan mod — not affiliated with Beamdog, BioWare, or Wizards of the Coast.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
