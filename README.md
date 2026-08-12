@@ -1,6 +1,6 @@
 # Kensai Reforged
 
-[![Version](https://img.shields.io/badge/version-v1.0.0-blue.svg)](https://github.com/P1nk-flaming0/bloodmoon-reaver)
+[![Version](https://img.shields.io/badge/version-v1.0.1-blue.svg)](https://github.com/P1nk-flaming0/bloodmoon-reaver)
 [![Engine](https://img.shields.io/badge/engine-BGEE%20%7C%20BG2EE%20%7C%20EET%20%7C%20IWDEE-informational.svg)](#compatibility--prerequisites)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](#license--legal)
 
@@ -214,4 +214,4 @@ Unless otherwise noted in individual third-party files (for example `fl#add_kit_
 
 ---
 
-_Kensai Reforged — v1.0.0_
+_Kensai Reforged — v1.0.1_
