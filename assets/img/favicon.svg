@@ -1,20 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kensai Reforged">
   <circle cx="32" cy="32" r="32" fill="#ffffff"/>
-  <!-- Curved katana silhouette -->
-  <g fill="#000000" transform="translate(32 32) rotate(-35) translate(-32 -32)">
-    <!-- Blade -->
-    <path d="M18 40
-             C22 28, 28 18, 40 12
-             C41.2 11.4, 42.5 12.6, 41.8 13.8
-             C32 22, 26 30, 22.5 40.5
-             Z"/>
-    <!-- Tip accent -->
-    <path d="M39.5 12.2 L44 10.5 L42.2 14.8 Z"/>
-    <!-- Guard (tsuba) -->
-    <rect x="16.5" y="39.5" width="10" height="2.2" rx="0.4"/>
-    <!-- Handle (tsuka) -->
-    <rect x="18.8" y="41.5" width="3.2" height="9" rx="0.6"/>
-    <!-- Pommel -->
-    <circle cx="20.4" cy="51.2" r="1.6"/>
-  </g>
+  <!-- Geometric tanto silhouette -->
+  <path fill="#000000"
+        transform="translate(32 32) rotate(-40) translate(-32 -32)"
+        d="M4 26
+           L17 26
+           L17 24
+           L23 24
+           L23 26
+           L48 26
+           L60 38
+           L23 38
+           L23 40
+           L17 40
+           L17 38
+           L4 38
+           Z"/>
 </svg>
