@@ -1,6 +1,6 @@
 BACKUP ~PF#kensai/backup~
 AUTHOR ~Pink_Flamingo~
-VERSION ~v1.0.1~
+VERSION ~v1.0.2~
 README ~PF#kensai/README.md~
 AUTO_EVAL_STRINGS
 
@@ -39,6 +39,7 @@ LANGUAGE
 BEGIN @11
 DESIGNATED 100
 SUBCOMPONENT @10
+LABEL ~PF#-kensai-reforged-replace-vanilla~
 
   // Shared spell resources
   COPY ~PF#kensai/spl/PF#FKADA.SPL~ ~override~
@@ -81,6 +82,7 @@ SUBCOMPONENT @10
 BEGIN @12
 DESIGNATED 200
 SUBCOMPONENT @10
+LABEL ~PF#-kensai-reforged-add-kensai-adept~
 
   // Shared spell resources
   COPY ~PF#kensai/spl/PF#FKADA.SPL~ ~override~

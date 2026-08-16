@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.2] - 2026-08-16
+
+### Added
+
+- Globally unique WeiDU **LABEL**s on both install components (`PF#-kensai-reforged-replace-vanilla`, `PF#-kensai-reforged-add-kensai-adept`), quoted so the `PF#` modder prefix is not treated as a comment, per the [G3 LABEL tutorial](https://www.gibberlings3.net/forums/topic/32516-tutorial-what-is-label-why-you-should-create-it-and-how-to-do-it-properly/). Project Infinity metadata already declares `LabelType = GloballyUnique`.
+
+---
+
 ## [1.0.1] - 2026-08-12
 
 ### Fixed
